@@ -39,7 +39,7 @@ class CallByReferenceCheckingTest {
     @Test
     fun testValueOnPassingReferenceAfterUpdatingReferenceValue(){
         callByReferenceChecking.passByReference(true)
-        assertEquals(true, callByReferenceChecking.passByReference.testObject.isTesting())
+        assertEquals(true, callByReferenceChecking.passByReference.getIsTestValue())
 
         callByReferenceChecking.testingObject.localTesting = false
         assertEquals(false, callByReferenceChecking.passByReference.getIsTestValue())
