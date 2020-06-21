@@ -1,5 +1,7 @@
-package com.aj.playground
+package com.aj.playground.functions
 
+import com.aj.playground.functions.CallByReferenceChecking
+import io.kotlintest.shouldBe
 import org.junit.Before
 
 import org.junit.Assert.*
@@ -18,6 +20,7 @@ class CallByReferenceCheckingTest {
         callByReferenceChecking.passByBooleanValue(flag = true)
 
         assertEquals(true, callByReferenceChecking.passByValue.getIsTestValue())
+        callByReferenceChecking.passByValue.getIsTestValue() shouldBe true
     }
 
     @Test
