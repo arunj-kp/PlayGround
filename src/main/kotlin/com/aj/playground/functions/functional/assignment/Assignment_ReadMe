@@ -1,0 +1,5 @@
+Implement a method named 'w' to write a string to a file. You should not use any existng kotlin library functions.
+
+Use the following classes:
+- java.io.File
+- FileOutputStream
